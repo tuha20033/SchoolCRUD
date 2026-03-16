@@ -9,13 +9,15 @@ public class Repository<T> : Application.Repositories.IRepository<T> where T : c
 {
 
     private readonly AppDbContext _context;
+    private readonly DbSet<T> _dbSet;
     public Repository(AppDbContext context)
     {
         _context = context;
+        _dbSet = _context.Set<T>();
     }
     public async Task AddAsync(T entity)
     {
-        await _context.Set<T>().AddAsync(entity);
+        await _dbSet.AddAsync(entity);
         await _context.SaveChangesAsync();
     }
 
@@ -24,7 +26,7 @@ public class Repository<T> : Application.Repositories.IRepository<T> where T : c
         var entity =  await GetByIdAsync(id);
         if(entity!= null)
         {
-            _context.Remove(entity);
+            _dbSet.Remove(entity);
             await _context.SaveChangesAsync();
         }    
        
@@ -32,17 +34,17 @@ public class Repository<T> : Application.Repositories.IRepository<T> where T : c
 
     public async Task<IEnumerable<T>> GetAllAsync()
     {
-      return  await _context.Set<T>().ToListAsync();
+      return  await _dbSet.ToListAsync();
     }
 
     public async Task<T?> GetByIdAsync(int id)
     {
-       return await _context.Set<T>().FindAsync(id).AsTask();
+        return await _dbSet.FindAsync(id).AsTask();
     }
 
     public async Task UpdateAsync(T entity)
     {
-        _context.Update(entity);
+        _dbSet.Update(entity);
         await _context.SaveChangesAsync();
     }
 }
