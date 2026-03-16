@@ -1,0 +1,15 @@
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+*.log
+*.vsidx
+*.db
+*.db-shm
+*.db-wal
+*.dtbcache.v2
+**/FileContentIndex/
+**/CopilotIndices/
+**/DesignTimeBuild/
