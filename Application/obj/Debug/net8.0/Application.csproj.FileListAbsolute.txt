@@ -1,0 +1,15 @@
+E:\CRUD_\demo2\Solution1\Application\bin\Debug\net8.0\Application.deps.json
+E:\CRUD_\demo2\Solution1\Application\bin\Debug\net8.0\Application.dll
+E:\CRUD_\demo2\Solution1\Application\bin\Debug\net8.0\Application.pdb
+E:\CRUD_\demo2\Solution1\Application\bin\Debug\net8.0\Domain.dll
+E:\CRUD_\demo2\Solution1\Application\bin\Debug\net8.0\Domain.pdb
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.dll
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\refint\Application.dll
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\Application.pdb
+E:\CRUD_\demo2\Solution1\Application\obj\Debug\net8.0\ref\Application.dll
