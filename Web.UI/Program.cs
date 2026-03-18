@@ -1,6 +1,7 @@
-using Application.Interface;
-using Application.Repositories;
+using Application;
 using Domain.Entities;
+using Domain.Repositories;
+using Infrastructure;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -12,10 +13,8 @@ builder.Services.AddMudServices();
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-builder.Services.AddScoped<ISchoolRepository, SchoolRepository>();
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddScoped(typeof(IRepository<School>), typeof(Repository<School>));
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

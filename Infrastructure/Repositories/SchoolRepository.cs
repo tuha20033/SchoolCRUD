@@ -1,6 +1,5 @@
-﻿
-using Application.Interface;
-using Domain.Entities;
+﻿using Domain.Entities;
+using Domain.Repositories;
 
 namespace Infrastructure.Repositories
 {
@@ -12,3 +11,4 @@ namespace Infrastructure.Repositories
         }
     }
 }
+
